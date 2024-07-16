@@ -1,0 +1,134 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #000;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+.top-menu li a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #111;
+    height: 1px;
+    transition: all 0.3s;
+    transform: scale(0);
+}
+
+.top-menu li a:hover::after{
+    transform: scale(1);
+}
+
+.modal-content {
+    font-size: 20px;
+    color:#000;
+}
+
+.modal-body img { 
+    max-width: 75px;
+}
+
+
+.custom-table tr{
+    border-bottom: 2px solid #ddd8d8;
+}
+
+.custom-table tr:last-child {
+    border-bottom: none;
+}
+
+.container-fluid {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    width: 200px;
+}
+
+
+.header-span {
+    font-family: "Open-sans", sans-serif;
+    font-size: 30px;
+}
+
+.header-span-div {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+.first-screen .header-span-div {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    border: 2px solid rgb(255, 255, 255); 
+    border-radius: 10px; 
+    padding: 4em; 
+}
+
+.carousel-item { 
+    transition: transform 0.8s ease;
+}
+
+.carousel-row {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 3em;
+}
+
+.carousel-caption-link {
+    margin-top: 5%;
+    text-align: center;
+}
+.carousel-caption-link a {
+    font-family: "Oswald", serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+
+.carousel-caption-link a {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-family: "Oswald", serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+
+.carousel-caption-link a:hover {
+    color: #911007;
+}
