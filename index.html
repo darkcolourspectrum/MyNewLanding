@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="utf-8" />
-    <title>Dark Colour Spectrum</title>
-    <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <style>
-   article, aside, details, figcaption, figure, footer,header,
-   hgroup, menu, nav, section { display: block; }
-    </style>
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,120 +13,170 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./main.css">
-    </head>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/192fa79f3a.js" crossorigin="anonymous"></script>
+    <title>Dark colour spectrum</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Assets/logoSVG.svg" alt="Logo" class="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Main</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products-beats.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
 
-    <body>
-
-        <header class="header">
-            <div class="container">
-                <div class="header__row">
-                    <div class="header__logo">
-                        <img src="Assets/logoSVG.svg" alt="LOGOo" class="logo">
+          </div>
+        </div>
+      </nav>
+      
+      <section class="container-fluid first-screen"> 
+            <div class="row first-screen-custom-row">
+              <div class="col-ld-5 col-md-4 d-none d-md-block mixer-img">
+                <img src="Assets/mixer.jpg" alt="mixer-img">
+              </div>
+              <div class="col-ld-5 col-md-4 col-sm-6 first-screen-custom-col">
+                <div class="first-screen-text">
+                  <div class="hello-div">
+                    <span>Hello!</span>
+                  </div>
+                  <span class="first-screen-small-text">I'm Dark Colour Spectrum, a music maker.</span>
+                  <div class="btn-container">
+                    <div class="btn-center">
+                      <button class="btn-1">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>READ MORE</span>
+                      </button>
                     </div>
-                    <div class="header__nav">
-                        <nav class='nav'>
-                            <ul>
-                                <li><a href="index.html">Main</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="products-beats.html">Products</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                  </div>
                 </div>
-            </div> 
-        </header>   
+              </div>
+            </div>
+      </section>
 
+      <section class="container-fluid second-screen"> 
 
-        <main>
-            <section class="first_screen">
-                <img src="Assets/mixer1.jpg" alt="Mixer controller" class="mixerImg">
-                <div class="bigTextBox">
-                    <div class="helloDiv">
-                        <div class="hello">
-                            <Span>HELLO!</Span>
-                        </div>
-                        <Span class="text">I’m "Dark Colour Spectrum", a music maker.</Span>
-                        <button class="btn1">Read more</button>
-                    </div>
+          <div class="row second-screen-row-1">
+              <div class="col-12 header-span-div">
+                  <span class="h1-span"> PROFILE </span>
+              </div>
+          </div>
+
+          <div class="row second-screen-row-2">
+            <div class="col-12 header-span-div">
+                <span class="h2-span"> i want to make sound </span>
+            </div>
+          </div>
+
+          <div class="row second-screen-row-3">
+            <div class="col-4 about-div">
+                <span class="about"> About me </span>
+                <p>​Not long ago, in 2023, I started writing music and learning sequencers.
+                  This attracts me, I believe that this is my main vent.
+                   So I decided to create this page to share my work with people.
+                   Today I am developing in such directions as new jazz and soft rock.
+                  On the products page you can find the sample packs I collected, as well as beats and presets.
+                  I hope you find them useful</p>
+            </div>
+
+            <div class="col-4 avatar-div">
+              <img src="Assets/anonim.jpg" alt="It's me" class="avatar">
+            </div>
+
+            <div class="col-4 about details">
+              <span class="about"> Details: </span>
+              <span class="about-mini"> Name: </span>
+              <span class="detail"> Kirill Kuzmin </span>
+              <span class="about-mini"> Age: </span>
+              <span class="detail"> 20 y.o. </span>
+              <span class="about-mini"> Location: </span>
+              <span class="detail"> TPU, Tomsk, Russia </span>
+            </div>
+          </div>
+      </section>
+
+      
+      <footer>
+        <section class="footer">
+          <div class="container footer-container">
+            <div class="row custom-row">
+              
+              <div class="col-md-3 col-4 custom-col">
+                <h4 class="header-txt">Information</h4>
+                <ul type="disc" class="list-unstyled info-list">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Payment and delivery</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </div>
+              
+              <div class="col-md-3 col-4 custom-col">
+                <h4 class="header-txt">Get in touch</h4>
+                <div class="custom-ul">
+                  <ul class="list-unstyled icons-list">
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-instagram custom-icon"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-telegram custom-icon"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-vk custom-icon"></i>
+                        </a>
+                      </li>
+                  </ul>
                 </div>
-            </section>
+              </div>
 
-            <section class="second_screen">
-                <div class="profile-label">
-                    <span class="profiletxt">PROFILE</span>
-                    <span class="iwanttxt">i want to make sound</span>
-                </div>
-                <div class="profile-content">
-                    <div class="first-element">
-                        <span class="about">About me</span>
-                        <span class="abouttxt">  ​Not long ago, in 2023, I started writing music and learning sequencers.
-                                This attracts me, I believe that this is my main vent.
-                                 So I decided to create this page to share my work with people. 
-                                Today I am developing in such directions as new jazz and soft rock.
-                        </span>
-                    </div> 
-                    <div class="second-element">
-                        <img src="Assets/anonim.jpg" alt="avatar">
-                    </div>
-                    <div class="third-element">
-                        <span class="about">Details</span>
-                        <div class="detailsdiv">
-                            <span class="detailstxt">Name:</span>
-                            <span class="detail">Kirill Kuzmin</span>
-                        </div>
-                        <div class="detailsdiv">
-                            <span class="detailstxt">Age:</span>
-                            <span class="detail">20 y.o.</span>
-                        </div>
-                        <div class="detailsdiv">
-                            <span class="detailstxt">Location:</span>
-                            <span class="detail">TPU, Tomsk, Russia.</span>
-                        </div>
-                    </div>
-                </div> 
-            </section>
-
-
-        </main>
-
-        <footer>
-            <section class="footer">
-                <div class="getInTouch">
-                    <span class="get">GET IN TOUCH</span>
-                    <span class="contact">Contact me by writing to my corporate email:</span>
-                    <h4 class="email">ksk43@tpu.ru</h4>
-                    <div class="icons">
-                        <img src="Assets/inst.svg" alt="instagram" class="instLogo">
-                        <img src="Assets/tg.svg" alt="telegram" class="tgLogo">
-                        <img src="Assets/vk.svg" alt="VK" class="vkLogo">
-                    </div>
-                </div>
-                <div class="callMe">
-                    <span>CALL ME<span>
-                    <span class="number">+7(908)211-90-56</span>
-                </div>
+              <div class="col-md-3 col-4 custom-col">
+                <h4 class="header-txt">Feedback</h4>
                 <form class="form">
-                    <div class="form-title">FEEDBACK</div>
-                    <div class="form-field"> 
-                        <div className="form-field">
-                            <input class="nameInp" name="Name" placeholder="Your name" type="text">
-                        </div>
-                        <div className="form-field">
-                            <input class="emailInp" name="Login" placeholder="Your login" type="text">
-                        </div>
-                        <div className="form-field">
-                            <input class="messageInp" name="Your message" placeholder="Your message" type="text">
-                        </div>
-                        <button class="form-button">Submit</button>
-                    </div>
-                </form>
-            </section>
-        </footer>
+                  <div class="form-field"> 
+                      <div className="form-field">
+                          <input class="nameInp" name="Name" placeholder="Your name" type="text">
+                      </div>
+                      <div className="form-field">
+                          <input class="emailInp" name="Login" placeholder="Your login" type="text">
+                      </div>
+                      <div className="form-field">
+                          <input class="messageInp" name="Your message" placeholder="Your message" type="text">
+                      </div>
+                      <button class="form-button glow-on-hover">Submit</button>
+                  </div>
+              </form>
+              </div>
 
-    </body>
+            </div>
+          </div>
+        </section>
+      </footer>
 
+  </body>
 </html>
