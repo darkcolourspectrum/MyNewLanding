@@ -49,7 +49,7 @@
         </div>
       </nav>
       
-      <section class="container-fluid first-screen"> 
+      <section id="section1" class="container-fluid first-screen"> 
             <div class="row first-screen-custom-row">
               <div class="col-ld-5 col-md-4 d-none d-md-block mixer-img">
                 <img src="Assets/mixer.jpg" alt="mixer-img">
@@ -62,7 +62,7 @@
                   <span class="first-screen-small-text">I'm Dark Colour Spectrum, a music maker.</span>
                   <div class="btn-container">
                     <div class="btn-center">
-                      <button class="btn-1">
+                      <button class="btn-1" onclick="scrollToNextSection()">
                         <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
                           <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
                           <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
@@ -76,7 +76,7 @@
             </div>
       </section>
 
-      <section class="container-fluid second-screen"> 
+      <section id="section2" class="container-fluid second-screen"> 
 
           <div class="row second-screen-row-1">
               <div class="col-12 header-span-div">
@@ -118,6 +118,41 @@
       </section>
 
       
+      <section id="section3" class="container-fluid third-screen">
+            <div class="row third-screen-first-row">
+              <div class="col-12 gift-col">
+                <a data-bs-toggle="modal" data-bs-target="#modal-gift">
+                  <i class="fa-solid fa-gift gift-icon rainbow rainbow-5"></i>
+                </a>
+                <span>take me!</span>
+                <div class="modal fade" id="modal-gift" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Congratulations!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          You have a unique opportunity! When you purchase $10 worth of anything from my store you will receive a completely unique beat and full rights to it. 🎉🎉🎉
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, thank you</button>
+                        <a  href="products-samples.html">
+                          <button type="button" class="btn btn-primary">Let's go!</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </section>
+
+      
+
+
+
       <footer>
         <section class="footer">
           <div class="container footer-container">
@@ -178,5 +213,11 @@
         </section>
       </footer>
 
+
+      <script>
+        function scrollToNextSection() {
+          document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
   </body>
 </html>

@@ -78,9 +78,15 @@ a {
 }
 
 .header-span-div {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
     margin-top: 2%;
 }
 
+.first-screen {
+    height: 100vh;
+}
 
 .first-screen .header-span-div {
     display: flex;
@@ -152,3 +158,151 @@ a {
     border: 2px solid #fff;
 }
 
+.footer {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    height: 45vh;
+    background-color: #202020;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.custom-row {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.header-txt {
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 3em;
+}
+
+.info-list {
+    margin-top: 20px;
+    list-style-type: disc;
+}
+
+.info-list a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.custom-ul {
+    display: flex;
+    justify-content:center;
+    margin-right: 25px;
+}
+
+.icons-list li {
+    display: inline-block;
+    margin-right: 1em; 
+}
+
+.custom-icon {
+    margin-top: 20px;
+    font-size: 46px;
+    color: #fff;
+}
+
+
+
+input {
+    font-family: "Montserrat", sans-serif;
+    height: 45px;
+    width: 100%;
+    color: #3B5983;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid #5c5757;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #911007;
+}
+
+.form-field {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+.glow-on-hover {
+    margin-top: 1em;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
