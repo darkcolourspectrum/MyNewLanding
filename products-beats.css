@@ -68,6 +68,10 @@ a {
     font-weight: 400;
 }
 
+.container {
+    font-family: "Roboto", sans-serif;
+}
+
 .logo {
     width: 200px;
 }
@@ -94,12 +98,88 @@ a {
 }
 
 
+@media (max-width: 375px) {
+    body {
+      font-size: 0.8em;
+    }
+
+    .custom-ul i {
+        font-size: 1em;
+    }
+    
+    .footer form {
+        display: none;
+    }
+    
+    .feedback { 
+        display: none;
+    }
+}
+
+  @media (min-width: 376px) and (max-width: 425px) {
+    body {
+        font-size: 0.6em;
+    }
+
+    .custom-ul i {
+        font-size: 2em;
+    }
+
+    .custom-ul i {
+        font-size: 2em;
+    }
+    
+    .footer form {
+        display: none;
+    }
+    
+    .feedback { 
+        display: none;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    .custom-ul i {
+        font-size: 1em;
+    }
+    
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 1em;
+    }
+
+
+
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+    body {
+        font-size: 1em;
+    }
+}
+
 
 .preview-row div {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
+
 
 .preview-img-div {
     display: flex;
@@ -111,7 +191,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+}
+
+.img-wrapper a {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-wrapper i {
+    margin-top: 2em;
+}
+
+.img-wrapper a:hover {
+    color: #911007;
 }
 
 .img-wrapper img {
@@ -150,12 +243,50 @@ a {
 }
 
 .imgTxt {
+    font-family: "Oswald", sans-serif;
+    font-size: 1em;
     margin-top: 20px;
     display: block;
 }
 
 .cover {
     border: 2px solid #fff;
+}
+
+.product-bottom-details {
+    width: 50%;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    border-top: 2px solid #eee;
+}
+
+.product-bottom-details a {
+    color: #fff;
+}
+
+.product-price { 
+    font-weight: 600;
+}
+
+.product-price small { 
+    color: gray;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.product-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.fa-cart-shopping:hover {
+    color: gray;
 }
 
 .footer {
